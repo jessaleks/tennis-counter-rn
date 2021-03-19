@@ -3,7 +3,10 @@
     "@react-native-community/masked-view": "~0.1.10",
     "@react-navigation/bottom-tabs": "~5.11.7",
     "@react-navigation/native": "~5.9.2",
+    "autoprefixer": "^10.2.5",
     "expo": "~40.0.0",
+    "postcss": "^8.2.8",
+    "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
@@ -11,7 +14,9 @@
     "react-native-reanimated": "~1.13.2",
     "react-native-safe-area-context": "~3.1.9",
     "react-native-screens": "~2.15.2",
-    "react-native-web": "~0.13.12"
+    "react-native-web": "~0.13.12",
+    "tailwind-rn": "^3.0.1",
+    "tailwindcss": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0"
