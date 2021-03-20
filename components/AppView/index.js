@@ -7,7 +7,7 @@ import {tailwind} from "../../tailwind";
 
 export default function AppView(props) {
     return (
-        <View style={tailwind('bg-gray-700 text-gray-200 flex justify-center items-center h-full')}>{props.children}</View>
+        <View style={tailwind('bg-gray-900 text-gray-200 flex justify-center items-center h-full')}>{props.children}</View>
     )
 }
 
