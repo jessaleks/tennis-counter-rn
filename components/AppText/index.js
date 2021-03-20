@@ -5,6 +5,6 @@ import {tailwind} from "../../tailwind";
 
 export default function AppText(props) {
     return (
-        <Text style={tailwind('text-gray-200')}>{props.children}</Text>
+        <Text style={{...tailwind('text-gray-200'), ...props.style}}>{props.children}</Text>
     )
 }

@@ -18,7 +18,7 @@ export default function AppButton(props) {
 
 
     return (
-        <Pressable style={({pressed}) => [tailwind('p-3 rounded'), {backgroundColor: pressed ? backgroundColorActive : backgroundColorInactive}]} onPress={props.onPress} android_ripple={isAndroid}>
+        <Pressable disabled={props.disabled || false} style={({pressed}) => [tailwind('p-3 rounded'), {backgroundColor: pressed ? backgroundColorActive : backgroundColorInactive}, props.style]} onPress={props.onPress} android_ripple={isAndroid}>
             <AppText>{props.children}</AppText>
         </Pressable>
     )
@@ -29,4 +29,6 @@ AppButton.propTypes = {
     onPress: PropTypes.func.isRequired,
     bgColor: PropTypes.string,
     brightness: PropTypes.oneOf([50, 100, 200, 300, 400, 500, 600, 700, 800, 900]),
+    style: PropTypes.object,
+    disabled: PropTypes.bool
 };
