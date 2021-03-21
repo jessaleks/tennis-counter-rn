@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Tennis Counter",
+    "slug": "tennis-counter",
+    "privacy": "hidden",
+    "orientation": "portrait",
+    "android": {
+      "package": "com.aleksanderjess.tenniscounter"
+    }
+  }
+}

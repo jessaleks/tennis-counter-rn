@@ -16,7 +16,17 @@ const backgroundColor = tailwind('bg-gray-900')
 export default function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator tabBarOptions={{borderColor: "none" , activeTintColor: activeTintColor.color, inactiveTintColor: inactiveTintColor.color, activeBackgroundColor: backgroundColor.backgroundColor, inactiveBackgroundColor:backgroundColor.backgroundColor}}>
+      <Tab.Navigator
+          tabBarOptions={{
+                  borderColor: "none" ,
+                  activeTintColor: activeTintColor.color,
+                  inactiveTintColor: inactiveTintColor.color,
+                  activeBackgroundColor: backgroundColor.backgroundColor,
+                  inactiveBackgroundColor:backgroundColor.backgroundColor
+              }}
+
+
+      >
         <Tab.Screen name="Counter" component={CounterScreen} />
         <Tab.Screen name="History" component={HistoryScreen} />
       </Tab.Navigator>
