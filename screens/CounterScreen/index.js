@@ -7,6 +7,9 @@ import AppView from "../../components/AppView";
 import {tailwind} from "../../tailwind";
 
 // TODO Create a stack navigation screen to be able to choose a mode - be it match, or just tiebreak
+// TODO Add a tiebreak, men's match, women's match modes
+// HINT You can create a table with the score using `react-native-easy-grid`
+// https://www.kindacode.com/article/how-to-implement-tables-in-react-native/
 export default function CounterScreen(props) {
     const [score1, setScore1] = useState(0)
     const [score2, setScore2] = useState(0)
