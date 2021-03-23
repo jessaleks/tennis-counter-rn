@@ -27,6 +27,7 @@ export default function App() {
 
 
       >
+        {/*  TODO ADD ICONS */}
         <Tab.Screen name="Counter" component={CounterScreen} />
         <Tab.Screen name="History" component={HistoryScreen} />
       </Tab.Navigator>
