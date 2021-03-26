@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Alert, Text, View} from "react-native";
+import {Alert, StyleSheet, Text, View} from "react-native";
 import AppText from "../../components/AppText";
 import AppButton from "../../components/AppButton";
 import AppView from "../../components/AppView";
@@ -78,3 +78,20 @@ export default function Tiebreak() {
         </AppView>
     )
 }
+
+const styles = StyleSheet.create({
+    scoreContainer: {
+        flexDirection: "column",
+        marginHorizontal: 20
+    },
+    scoreIndicator: {
+        fontSize: 120,
+        marginHorizontal: 50
+    },
+    scoreButton: {
+        fontSize: 50,
+        alignItems: "center",
+        fontWeight: "900",
+
+    }
+})

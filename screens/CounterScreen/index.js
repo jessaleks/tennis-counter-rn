@@ -8,6 +8,7 @@ import AppView from "../../components/AppView";
 import {tailwind} from "../../tailwind";
 import Tiebreak from "../../subscreens/Counter/Tiebreak";
 import Match from "../../subscreens/Counter/Match";
+import ModeChoice from "../../subscreens/Counter/ModeChoice";
 
 
 const Stack = createStackNavigator();
@@ -22,9 +23,11 @@ export default function CounterScreen(props) {
     return (
         <>
         <Stack.Navigator>
+            <Stack.Screen name={"ModeChoice"} component={ModeChoice} options={{headerTransparent: true}}/>
             <Stack.Screen name={"Tiebreak"} component={Tiebreak}/>
             <Stack.Screen name={"Match"} component={Match}/>
         </Stack.Navigator>
+            <ModeChoice />
 
 
         </>
